@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homepage</title>
+
+<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; }
+body { margin:0; font-family: arial, sans-serif; }
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 220px;
+    height: 70vh;
+    background: #C3B091;
+    position: absolute;
+    left:0;
+    top:20px;
+    padding:15px;
+    border-radius:0 15px 15px 0;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.sidebar h2 { text-align:center; margin-bottom:20px; }
+.sidebar ul { list-style:none; padding:0; }
+.sidebar ul li { margin:8px 0; }
+.sidebar ul li a {
+    text-decoration:none;
+    color:#000;
+    display:block;
+    padding:8px;
+    border-radius:8px;
+}
+.sidebar ul li a:hover { background:#ddd; }
+.sidebar ul li ul { display:none; margin-left:15px; }
+.sidebar ul li:hover ul { display:block; }
+
+/* ===== HERO (BACKGROUND SAHAJA) ===== */
+.hero {
+    margin-left: 260px;
+    height: 50vh;
+    background: url("image/company.png") center/cover no-repeat;
+    position: relative;
+}
+
+/* Clock atas kanan background */
+.hero-clock {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* ===== QUOTE SECTION (BAWAH HERO) ===== */
+.quote-section {
+    margin-left: 260px;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Logo */
+.logo-gif {
+    width: 250pxpx;
+    height: 150px;
+}
+
+/* Quote box */
+.quote {
+    background: #fff9f0;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ===== SLIDER ===== */
+.slider {
+    width:100%;
+    height:350px;
+    overflow:hidden;
+    margin-top:40px;
+}
+.slides {
+    display:flex;
+    width:300%;
+    animation: slide 12s infinite;
+}
+.slides img {
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+@keyframes slide {
+    0% { margin-left:0 }
+    33% { margin-left:-100% }
+    66% { margin-left:-200% }
+    100% { margin-left:0 }
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align:center;
+    padding:15px;
+    background:#eee;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width:768px){
+    .sidebar { display:none; }
+    .hero { margin-left:0; height:35vh; }
+
+    .quote-section {
+        margin-left:0;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .logo-gif { width: 90px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar" style="font-family: times new roman;">
+    <h2>MENU</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="about_us.html">About Us</a>
+            <ul>
+                <li><a href="#">Background</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Organization Chart</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Service</a>
+            <ul>
+                <li><a href="services.html">Our Services</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Hired</a>
+            <ul>
+                <li><a href="kerja.html">Part-Time</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+            <ul>
+                <li><a href="contact_us.html">Location</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-clock">
+        <iframe src="https://free.timeanddate.com/clock/ia8tws3m/n122/tlmy40/fn13/tcccc/bo2/pd2/tt0/ts1/ta1"
+        frameborder="0" width="257" height="20"></iframe>
+    </div>
+</div>
+
+<!-- QUOTE + LOGO (BAWAH HERO) -->
+<div class="quote-section">
+    <img src="animation/logo.gif" class="logo-gif" alt="gif logo">
+
+    <div class="quote">
+        <p><b>"Change is the end result of all true learning"</b></p>
+        <p>
+            We believe that childhood is a time for discovery, laughter, and learning.
+            At <sup>Nursery SiNuNu</sup>, children are guided to develop their skills,
+            make friends, and enjoy every moment while building a strong foundation
+            for their future.
+        </p>
+    </div>
+</div>
+
+<!-- AUDIO -->
+<audio controls>
+    <source src="audio/nursery.mp3" type="audio/mp3">
+</audio>
+
+<!-- SLIDER -->
+<div class="slider">
+    <div class="slides">
+        <img src="image/playground.jpg">
+        <img src="image/nursery.jpg">
+        <img src="image/nursery2.jpg">
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 | Designed by Ishami
+</footer>
+
+</body>
+</html>

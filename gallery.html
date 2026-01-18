@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+</head>
+
+<style>
+*
+{
+    box-sizing:border-box;
+}
+
+html
+{
+    scroll-behavior:smooth;
+}
+
+body
+{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f3efe7;
+}
+
+
+.menu-btn
+{
+    position:fixed;
+    top:20px;
+    left:15px;
+    z-index:1100;
+    padding:10px 14px;
+    background:#C3B091;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+
+.sidebar
+{
+    width:220px;
+    height:75vh;
+    background:#C3B091;
+    position:fixed;
+    top:20px;
+    left:-220px;
+    padding:15px;
+    border-radius:0 15px 15px 0;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:left 0.3s ease;
+    z-index:1000;
+    font-family:'Times New Roman';
+}
+
+.sidebar.active
+{
+    left:0;
+}
+
+.sidebar h2
+{
+    text-align:center;
+    margin-top:0;
+}
+
+.sidebar ul
+{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar ul li a
+{
+    display:block;
+    padding:8px;
+    text-decoration:none;
+    color:#000;
+    border-radius:6px;
+}
+
+.sidebar ul li a:hover
+{
+    background:rgba(255,255,255,0.4);
+}
+
+.sidebar ul li ul
+{
+    display:none;
+    margin-left:15px;
+}
+
+.sidebar ul li:hover ul
+{
+    display:block;
+}
+
+footer { text-align:center; padding:15px; background:#eee; }
+</style>
+
+<body>
+
+	<button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<div class="sidebar" style="font-family: times new roman;">
+    <h2>MENU</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="about_us.html">About Us</a>
+            <ul>
+                <li><a href="#">Background</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Organization Chart</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Service</a>
+            <ul>
+                <li><a href="services.html">Our Services</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Hired</a>
+            <ul>
+                <li><a href="kerja.html">Part-Time</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+            <ul>
+                <li><a href="contact_us.html">Location</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+    <section style="max-width:1200px; margin:auto; padding:40px;">
+
+    <h1 style="text-align:center; background-color:chocolate; color:white; font-family:cursive; padding:15px;">
+    ACHIEVEMENTS
+    </h1>
+
+    <div style="display:flex; align-items:center; gap:30px; margin:50px 0;">
+    <img src="image/award.jpg" style="width:450px; height:400px;">
+    <p>Award of Excellence recognising Nursery SiNuNu for its commitment to quality childcare and early childhood education.</p>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:30px; margin:50px 0; flex-direction:row-reverse;">
+    <img src="image/award2.jpg" style="width:450px; height:400px;">
+    <p>Nursery SiNuNu receiving an award for outstanding achievement in a childcare-related programme and competition.</p>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:30px; margin:50px 0;">
+    <img src="image/award3.jpg" style="width:450px; height:400px;">
+    <p>Certificate of appreciation awarded to Nursery SiNuNu for dedication in nurturing and caring for babies and young children.</p>
+    </div>
+
+    <h1 style="text-align: center; background-color: chocolate; font-family: cursive; color: white;">EVENTS</h1>
+
+    <p style="text-align: center;">
+	<img src="image/birthdayparty.jpg" alt="image of birthday party" style="height: 400px; width: 450px; border-radius: 20px;">
+
+	<img src="image/sensory.jpg" alt="image of sensory game" height="400" width="450" style="border-radius: 20px">
+
+	<img src="image/game.jpg" alt="image of children playing game" style="height: 400px; width: 450px; border-radius: 20px;">
+
+	<img src="image/block.jpg" alt="image children play block" height="400" width="450" style="border-radius:20px;">
+
+	<img src="image/eat.jpg" alt="image of having meal" style="height: 400px; width: 450px; border-radius: 20px;">
+
+	<img src="image/storytelling.jpg" alt="image of reunited" height="400" width="450" style="border-radius: 20px;">
+
+	<img src="image/child.jpg" alt="image of reunited" height="400" width="450" style="border-radius: 20px;">
+
+	<img src="image/children.jpg" alt="image of reunited" height="400" width="450" style="border-radius: 20px;">
+
+	<img src="image/games.jpg" alt="image of reunited" height="400" width="450" style="border-radius: 20px;">
+    </p>
+    
+
+    <p style="text-align: center;">
+    <video width="500" height="500" controls>
+		<source src="video/colouring.mp4" type="video/mp4">
+			Your browser does not support video element
+	</video></p>
+
+    <p style="text-align: center;">
+	<video width="500" height="500" controls>
+		<source src="video/arabic.mp4" type="video/mp4">
+			Your browser does not support video element
+	</video></p>
+
+	<p style="text-align: center;">
+		<video width="500" height="500" controls>
+		<source src="video/girl.mp4" type="video/mp4">
+			Your browser does not support video element
+	</video></p>
+</section>
+ 
+ <script>
+function toggleSidebar() 
+{
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+}
+</script>
+
+<footer>
+    &copy; 2026 | Designed by Radhwa
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Apply Job</title>
+</head>
+<body>
+
+	<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.form-wrapper {
+  max-width: 700px;
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background: #C3B091;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b3a078;
+}
+
+.date-section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer { text-align:center; padding:15px; background:#eee; }
+
+</style>
+</head>
+
+<body>
+
+<div class="form-wrapper">
+  <h2>Job Application Form</h2>
+
+ <form onsubmit="return confirmSubmit()">
+
+    <label>Name</label>
+    <input type="text" placeholder="Full Name" required>
+
+    <label>IC Number</label>
+    <input type="text" placeholder="xxxxxx-xx-xxxx" required>
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="01x-xxxxxxx" required>
+
+    <label>Address</label>
+    <textarea placeholder="Current Address"></textarea>
+
+    <label>Email</label>
+    <input type="email" placeholder="example@email.com" required>
+
+    <label>Highest Qualification</label>
+    <select required>
+      <option value="">-- Select --</option>
+      <option>SPM</option>
+      <option>Diploma</option>
+      <option>Degree</option>
+      <option>Others</option>
+    </select>
+
+    <label>Why do you want this job?</label>
+    <textarea placeholder="Write your reason here"></textarea>
+
+    <div class="date-section">
+      <label>Date:</label>
+      <input type="date">
+    </div>
+
+    <br><br>
+
+    <button type="submit">Submit Application</button>
+
+  </form>
+</div>
+
+<script>
+function confirmSubmit() {
+  if (confirm("Are you sure to proceed?")) {
+    location.reload();
+  }
+  return false;
+}
+</script>
+
+<footer>
+    &copy; 2026 | Designed by Ishami
+</footer>
+
+</body>
+</html>

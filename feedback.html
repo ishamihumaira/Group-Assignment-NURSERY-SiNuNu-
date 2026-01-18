@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback | Cutie Cottage</title>
+    <style>
+        .review-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.rating-summary {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #f4b400;
+}
+
+.review-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.review-box h4 {
+    margin-bottom: 5px;
+}
+
+.review-box .stars {
+    color: #f4b400;
+}
+
+.feedback-section {
+    max-width: 500px;
+    margin: 60px auto;
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.star-rating {
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.star-rating span.active {
+    color: #f4b400;
+}
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <!-- navbar sama macam page lain -->
+</nav>
+
+<section class="review-container">
+
+    <h2>Customer Reviews</h2>
+    <div class="rating-summary">
+        ⭐ 4.8 / 5 <span>(Based on 120 reviews)</span>
+    </div>
+
+    <!-- EXISTING REVIEWS -->
+    <div class="review-box">
+        <h4> Rull</h4>
+        <p class="stars">★★★★★</p>
+        <p>Very caring teachers and safe environment. My child loves going to school!</p>
+    </div>
+
+    <div class="review-box">
+        <h4>Miftah Faridl</h4>
+        <p class="stars">★★★★☆</p>
+        <p>Clean nursery and friendly staff. Highly recommended.</p>
+    </div>
+
+    <div class="review-box">
+        <h4>A. Daniel</h4>
+        <p class="stars">★★★★★</p>
+        <p>Excellent childcare services. Very trustworthy.</p>
+    </div>
+
+    <div class="review-box">
+        <h4>Syakira</h4>
+        <p class="stars">★★★★★</p>
+        <p> Very trustworthy. My child has become more independent</p>
+    </div>
+
+    <div class="review-box">
+        <h4> Humaira</h4>
+        <p class="stars">★★★★★</p>
+        <p>Teachers communicate well with parents. Well-maintained classrooms and play areas.</p>
+    </div>
+
+    <div class="review-box">
+        <h4>Nik</h4>
+        <p class="stars">★★★☆☆</p>
+        <p>Fun and educational activities for children.</p>
+    </div>
+
+     <div class="review-box">
+        <h4>Al-Muqiit</h4>
+        <p class="stars">★★★★☆</p>
+        <p>Alhamdulillah. Staff always update us about our child’s progress</p>
+    </div>
+
+    <div class="review-box">
+        <h4>Qisya</h4>
+        <p class="stars">★★★☆☆</p>
+        <p>Management is helpful and professional</p>
+    </div>
+
+    <div class="review-box">
+        <h4>Syafiqah</h4>
+        <p class="stars">★★☆☆☆</p>
+        <p>Teachers seem too busy to focus on every child</p>
+    </div>
+
+    <div class="review-box">
+        <h4>Zura</h4>
+        <p class="stars">★★☆☆☆</p>
+        <p>Activities are repetitive</p>
+    </div>
+
+</section>
+
+<!-- FEEDBACK FORM -->
+<section class="feedback-section">
+    <h2>Leave Your Feedback</h2>
+
+    <form class="feedback-form">
+        <div class="star-rating">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+        </div>
+
+        <input type="text" placeholder="Your Name" required>
+        <textarea placeholder="Write your feedback..." required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<script src="js/feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nursery SiNuNu – About Us</title>
+
+<style>
+*
+{
+    box-sizing:border-box;
+}
+
+html
+{
+    scroll-behavior:smooth;
+}
+
+body
+{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f3efe7;
+}
+
+
+.menu-btn
+{
+    position:fixed;
+    top:20px;
+    left:15px;
+    z-index:1100;
+    padding:10px 14px;
+    background:#C3B091;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+
+.sidebar
+{
+    width:220px;
+    height:75vh;
+    background:#C3B091;
+    position:fixed;
+    top:20px;
+    left:-220px;
+    padding:15px;
+    border-radius:0 15px 15px 0;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:left 0.3s ease;
+    z-index:1000;
+    font-family:'Times New Roman';
+}
+
+.sidebar.active
+{
+    left:0;
+}
+
+.sidebar h2
+{
+    text-align:center;
+    margin-top:0;
+}
+
+.sidebar ul
+{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar ul li a
+{
+    display:block;
+    padding:8px;
+    text-decoration:none;
+    color:#000;
+    border-radius:6px;
+}
+
+.sidebar ul li a:hover
+{
+    background:rgba(255,255,255,0.4);
+}
+
+.sidebar ul li ul
+{
+    display:none;
+    margin-left:15px;
+}
+
+.sidebar ul li:hover ul
+{
+    display:block;
+}
+
+
+.section
+{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+
+#about-us
+{ background-image: url(image/baby.jpg); background-size:cover; }
+#background
+{ background-image:url(image/babyy.jpg); background-size:cover; }
+#mission
+{ background-image:url(image/toys.jpg); background-size:cover; }
+#vision
+{ background-image:url(image/babyyy.jpg); background-size: cover;}
+#organization-chart{ background:#nude; }
+
+
+.card
+{
+    background:rgba(255,255,255,0.95);
+    padding:40px;
+    max-width:700px;
+    width:100%;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    animation:float 3s ease-in-out infinite;
+}
+
+.image-card
+{
+    width: fit-content;
+    max-width: none;
+    padding: 25px;
+}
+
+@keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-12px); }
+}
+
+.card h1{
+    margin-top:0;
+    color:#FF6F61;
+    letter-spacing:1px;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.6;
+    color:#333;
+}
+
+footer { text-align:center; padding:15px; background:#eee; }
+
+</style>
+</head>
+
+<body>
+
+
+<button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<div class="sidebar">
+    <h2>MENU</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="#about-us">About Us</a>
+            <ul>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#organization-chart">Organization Chart</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Service</a>
+            <ul>
+                <li><a href="services.html">Our Services</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Hired</a>
+            <ul>
+                <li><a href="kerja.html">Part-Time</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+            <ul>
+                <li><a href="contact_us.html">Location</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+<div id="about-us" class="section">
+    <div class="card">
+        <h1>ABOUT US</h1>
+        <p>
+            NURSERY SiNuNu provides a caring, safe and creative learning environment
+            that supports early childhood development through play, exploration and love.
+        </p>
+    </div>
+</div>
+
+
+<div id="background" class="section">
+    <div class="card">
+        <h1>BACKGROUND</h1>
+        <p>
+            Established in September, NURSERY SiNuNu focuses on nurturing children
+            emotionally, socially and intellectually in a supportive atmosphere.
+        </p>
+    </div>
+</div>
+
+
+<div id="mission" class="section">
+    <div class="card">
+        <h1>MISSION</h1>
+        <p>
+            To provide quality early childhood education that fosters creativity,
+            confidence and lifelong learning.
+        </p>
+    </div>
+</div>
+
+
+<div id="vision" class="section">
+    <div class="card">
+        <h1>VISION</h1>
+        <p>
+            To become a trusted nursery that inspires happy learners
+            and supports holistic child development.
+        </p>
+    </div>
+</div>
+
+
+<div id="organization-chart" class="section">
+    <div class="card image-card">
+        <h1>ORGANIZATION CHART</h1>
+        <img src="image/org.png" alt="Organization Chart of Nursery SiNuNu">
+    </div>
+</div>
+
+<script>
+function toggleSidebar(){
+    document.querySelector('.sidebar').classList.toggle('active');
+}
+</script>
+
+
+<footer>
+    &copy; 2026 | Designed by Radhwa
+</footer>
+
+</body>
+</html>

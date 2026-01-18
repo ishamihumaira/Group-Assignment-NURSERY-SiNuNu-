@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Job Requirement</title>
+</head>
+<body>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+.sidebar {
+    width: 220px;
+    height: 70vh;
+    background: #C3B091; 
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 8px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.sidebar ul li a:hover {
+    background: #ddd;
+}
+
+.sidebar ul li ul {
+    display: none;
+    margin-left: 15px;
+}
+
+.sidebar ul li:hover ul {
+    display: block;
+}
+
+.jobs-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 20px;
+  padding: 0 15px;
+  margin-left: 250px; 
+}
+
+.job-list {
+  width: 35%;
+}
+
+.job-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #C3B091;
+}
+
+.job-card h3 {
+  margin: 0;
+}
+
+.job-card button {
+  margin-top: 10px;
+  background: #C3B091;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.job-details {
+  width: 65%;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.tag {
+  background: #efe6d3;
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.apply-btn a {
+  background: #C3B091;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .jobs-container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+footer { text-align:center; padding:15px; background:#eee; }
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar" style="font-family: times new roman;">
+    <h2>MENU</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="about_us.html">About Us</a>
+            <ul>
+                <li><a href="#">Background</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Organization Chart</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Service</a>
+            <ul>
+                <li><a href="services.html">Our Services</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Hired</a>
+            <ul>
+                <li><a href="kerja.html">Part-Time</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+            <ul>
+                <li><a href="contact_us.html">Location</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+<div class="jobs-container">
+
+  <div class="job-list">
+
+    <div class="job-card">
+      <h3>Nursery Assistant</h3>
+      <p>Part-Time</p>
+      <p>RM8 – RM10 / hour</p>
+      <p>Kuantan Branch</p>
+      <button onclick="showJob1()">View Details</button>
+    </div>
+
+    <div class="job-card">
+      <h3>Childcare Helper</h3>
+      <p>Part-Time</p>
+      <p>RM9 / hour</p>
+      <p>Temerloh Branch</p>
+      <button onclick="showJob2()">View Details</button>
+    </div>
+
+     <div class="job-card">
+      <h3>App Promoter</h3>
+      <p>Part-Time</p>
+      <p>RM10 / hour</p>
+      <p>Kuantan Branch</p>
+      <button onclick="showJob3()">View Details</button>
+    </div>
+
+     <div class="job-card">
+      <h3>Junior Nursery Staff</h3>
+      <p>Part-Time</p>
+      <p>RM7 / hour</p>
+      <p>Jengka Branch</p>
+      <button onclick="showJob4()">View Details</button>
+    </div>
+
+
+
+  </div>
+
+  <div class="job-details" id="details">
+    <span class="tag">Part-Time</span>
+    <h2>Nursery Assistant</h2>
+    <p><b>Salary:</b> RM8 – RM10 / hour</p>
+    <p><b>Location:</b>Kuantan Branch</p>
+
+    <h4>Job Description</h4>
+    <ul>
+      <li>Ensure the classroom and materials are clean and organized</li>
+      <li>Supervise children during activities and playtime</li>
+      <li>Communicate politely with parents and staff</li>
+    </ul>
+
+    <h4>Benefits</h4>
+    <ul>
+      <li>Allowance / Competitive pay</li>
+      <li>Training provided</li>
+    </ul>
+
+    <div class="apply-btn">
+      <a href="borang.html" target="_blank">Apply Now</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function showJob1() {
+  document.getElementById("details").innerHTML = `
+    <span class="tag">Part-Time</span>
+    <h2>Nursery Assistant</h2>
+    <p><b>Salary:</b> RM8 – RM10 / hour</p>
+    <p><b>Location:</b>Kuantan Branch</p>
+
+    <h4>Job Description</h4>
+    <ul>
+      <li>Ensure the classroom and materials are clean and organized</li>
+      <li>Supervise children during activities and playtime</li>
+      <li>Communicate politely with parents and staff</li>
+    </ul>
+
+    <h4>Benefits</h4>
+    <ul>
+      <li>Allowance / Competitive pay</li>
+      <li>Training provided</li>
+    </ul>
+
+    <div class="apply-btn">
+      <a href="apply.html" target="_blank">Apply Now</a>
+    </div>
+  `;
+}
+
+function showJob2() {
+  document.getElementById("details").innerHTML = `
+    <span class="tag">Part-Time</span>
+    <h2>Childcare Helper</h2>
+    <p><b>Salary:</b> RM9 / hour</p>
+    <p><b>Location:</b>Temerloh Branch</p>
+
+    <h4>Job Description</h4>
+    <ul>
+      <li>Assist with feeding, changing, and nap time</li>
+      <li>Support teachers in daily classroom routines</li>
+    </ul>
+
+    <h4>Benefits</h4>
+    <ul>
+      <li>Flexible working hours</li>
+      <li>Certificate of experience</li>
+    </ul>
+
+    <div class="apply-btn">
+      <a href="borang.html" target="_blank">Apply Now</a>
+    </div>
+  `;
+}
+
+function showJob3() {
+  document.getElementById("details").innerHTML = `
+    <span class="tag">Part-Time</span>
+    <h2>App Promoter</h2>
+    <p><b>Salary:</b> RM10 / hour</p>
+    <p><b>Location:</b>Kuantan Branch</p>
+
+    <h4>Job Description</h4>
+    <ul>
+      <li>Promote the application to the public</li>
+      <li>Communicate confidently and in a friendly manner</li>
+  	  <li>Achieve daily or weekly targets</li>
+    </ul>
+
+    <h4>Benefits</h4>
+    <ul>
+      <li>Commission & performance bonus</li>
+      <li>No experience needed</li>
+    </ul>
+
+    <div class="apply-btn">
+      <a href="borang.html" target="_blank">Apply Now</a>
+    </div>
+  `;
+}
+
+function showJob4() {
+  document.getElementById("details").innerHTML = `
+    <span class="tag">Part-Time</span>
+    <h2>Junior Nursery Staff</h2>
+    <p><b>Salary:</b> RM7 / hour</p>
+    <p><b>Location:</b>Jengka Branch</p>
+
+    <h4>Job Description</h4>
+    <ul>
+      <li>Assist with simple teaching activities</li>
+      <li>Maintain cleanliness of the nursery area</li>
+  	  <li>Work closely with teachers and staff</li>
+    </ul>
+
+    <h4>Benefits</h4>
+    <ul>
+      <li>Training provided</li>
+      <li>No experience needed</li>
+  	  <li>Suitable for students & SPM leavers</li>
+    </ul>
+
+    <div class="apply-btn">
+      <a href="borang.html" target="_blank">Apply Now</a>
+    </div>
+  `;
+}
+</script>
+
+<footer>
+    &copy; 2026 | Designed by Ishami
+</footer>
+
+
+</body>
+</html>

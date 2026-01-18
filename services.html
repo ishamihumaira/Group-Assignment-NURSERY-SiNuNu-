@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Services</title>
+
+	<style>
+		* {
+    		box-sizing: border-box;
+		}
+
+	body
+ 	{
+    margin: 0;
+    font-family: arial, sans-serif;
+	}
+
+.sidebar
+ {
+    width: 220px;
+    height: 70vh;
+    background: #C3B091; 
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h2
+ {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul 
+{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li 
+{
+    margin: 8px 0;
+}
+
+.sidebar ul li a
+ {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.sidebar ul li a:hover 
+{
+    background: #ddd;
+}
+
+.sidebar ul li ul 
+{
+    display: none;
+    margin-left: 15px;
+}
+
+.sidebar ul li:hover ul
+ {
+    display: block;
+}
+		h1
+		{
+			background-color: #C3B091;
+			text-align: center;
+			padding: 15px;
+		}
+
+		table
+		{
+			width: 50%;
+			border-collapse: collapse;
+			margin: 20px auto;
+			font-family: Arial, sans-serif;
+		}
+
+		th, td
+		{
+			border: 1px solid #000;
+			padding: 10px;
+			text-align: center;
+		}
+
+		th 
+		{
+			background-color: #E6D8B5;
+		}
+
+		h2
+		{
+			text-align: center;
+			background-color: #C3B091;
+			padding: 13px;
+		}
+
+		.service-card 
+		{
+			display: flex;
+			gap: 30px;
+			margin:40px auto;
+			width: 80%;
+			align-items: center;
+			background-color: #ffffff;
+			padding: 30px;
+			border-radius: 15px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+		}
+
+		.service-text
+		{
+			width: 50%;
+		}	
+
+		.service-text h3
+		{
+			margin-top: 0;
+			color: #5c4a2f;
+		}
+		.service-image
+		{
+			width: 50%;
+			text-align: center;
+		}
+
+		.service-image img 
+		{
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		.price
+		{
+			background-color: #5c4a2f;
+			color: white;
+			padding: 10px;
+			margin-top: 10px;
+		}
+
+		.main-content
+		{
+			margin-left: 260px;
+			padding: 20px;
+		}
+
+		footer { text-align:center; padding:15px; background:#eee; }
+	</style>
+</head>
+<body>
+
+<div class="sidebar" style="font-family: times new roman;">
+    <h2>MENU</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="about_us.html">About Us</a>
+            <ul>
+                <li><a href="#">Background</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Organization Chart</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Service</a>
+            <ul>
+                <li><a href="services.html">Our Services</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Hired</a>
+            <ul>
+                <li><a href="kerja.html">Part-Time</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+            <ul>
+                <li><a href="contact_us.html">Location</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+  
+  <div class="main-content">
+	<h1>OUR SERVICES</h1>
+
+	<h2 >Operating Hours</h2>
+
+	<table class="operation-table">	
+
+		<tr>
+			<th>Day</th>
+			<th>Operating Time</th>
+			<th>Services Location</th>
+		</tr>
+
+		<tr>
+			<td>Monday - Thursday</td>
+			<th>8:00 AM - 6:00 PM</th>
+			<th>Nursery</th>
+		</tr>
+
+		<tr>
+			<td>Friday - Saturday</td>
+			<th>8:00 AM - 6:00 PM</th>
+			<th>Home Service</th>
+		</tr>
+
+		<tr>
+			<td>Sunday</td>
+			<td colspan="2" style="text-align: center;">Closed</td>
+		</tr>
+	</table>
+
+	
+
+		<div style="
+			background-color: #f3efe6;
+			padding: 40px;
+			text-align: center;
+			">
+
+		<h2>Children 6-18 months</h2>
+		<p>
+		We provide loving and attentive care for babies, ensuring their comfort and safety.
+		</p>
+    	</div>
+    	</div>
+	
+	<div class="service-card">  
+
+		<div class="service-text">
+			<h3>Infant Care</h3>
+			<p><strong>Age Group:</strong> 6-12 months</p>
+			<p>
+				Our infant care programme provides a safe, loving and nurturing enviroment for babies.
+			</p>
+		</div>
+
+		<div class="service-image">
+			<img src="image/baby1.jpg">
+			<p class="price">RM1000 / month </p>
+		</div>
+
+	</div>
+
+
+	<div class="service-card">
+
+
+		<div class="service-image">
+			<img src="image/baby2.jpg">
+			<p class="price">RM1000 / month </p>
+		</div>
+
+		<div class="service-text">
+			<h3>Todler Care</h3>
+			<p><strong>Age Group:</strong> 12 - 18 months</p>
+			<p>
+				At NURSERY SiNuNu, children are cared for by trained educators in a warm and safe environment. We provide age-appropriate activities, daily routines, and gentle guidance that support emotional growth while encouraging independence.
+			</p>
+		</div>
+	</div>
+</div>
+	<div class="service-card">
+
+		<div class="service-text">
+			<h3>Day Care and Playgroup</h3>
+			<p><strong>Age Group:</strong> 2-3 Years</p>
+			<p>
+				Our infant care programme provides a safe, loving and nurturing enviroment for babies.
+			</p>
+		</div>
+
+		<div class="service-image">
+			<img src="image/baby3.jpeg">
+			<p class="price">RM700 / month </p>
+		</div>
+
+    </div>
+
+	</div>
+
+	<div style="
+	background-color: #f3efe6;
+	padding: 40px;
+	text-align: center;
+	">
+
+	<h2>Children 4-6 Years</h2>
+	<p>
+		We offer additional services focused on helping children learn and develop skills in various languages.
+	</p>
+    </div>
+		
+	</div>
+
+	<div class="service-card">  
+	  	
+		<div class="service-text">
+			<h3>Learning Arab</h3>
+			<p>
+				Our Arabic learning sessions introduce children to the language through engaging activities that encourage communication and understanding in a supportive environment.
+			</p>
+		</div>
+
+		<div class="service-image">
+			<img src="image/baby4.jpg">
+			<p class="price">RM300 / month </p>
+		</div>
+
+	</div>
+
+
+	<div class="service-card">
+
+
+		<div class="service-image">
+			<img src="image/baby5.jpg">
+			<p class="price">RM100 / month </p>
+		</div>
+
+		<div class="service-text">
+			<h3>Learning Bahasa Melayu</h3>
+			<p>
+				We provide Bahasa Melayu language learning to strengthen children’s foundation in their mother tongue through guided learning and interactive play.
+		</div>
+	</div>
+
+	<div class="service-card">
+
+		<div class="service-text">
+			<h3>Learning English</h3>
+			<p>
+				We offer English learning programmes that support early communication skills through fun, age-appropriate activities.
+			</p>
+		</div>
+
+		<div class="service-image">
+			<img src="image/baby6.jpg">
+			<p class="price">RM200/ month </p>
+		</div>
+
+    </div>
+
+	</div>
+
+<footer>
+    &copy; 2026 | Designed by Hajar
+</footer>
+
+</body>
+</html>
