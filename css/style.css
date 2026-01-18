@@ -56,6 +56,15 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
+.location-card a {
+  text-decoration: none;
+}
+
+.location-card a::after {
+  content: none;
+}
+
+
 .location-card h3 {
     margin-top: 0;
     color: #8b5e3c;
@@ -109,3 +118,4 @@ body {
     border: 0;
     border-radius: 15px;
 }
+
